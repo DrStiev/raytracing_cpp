@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cos_cubed.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\cos_cubed.dir/objects.a @CMakeFiles\cos_cubed.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\cos_cubed.dir/objects.a -Wl,--no-whole-archive -o cos_cubed.exe -Wl,--out-implib,libcos_cubed.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cos_cubed.dir\linkLibs.rsp

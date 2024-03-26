@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "RTWeekend",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cos_cubed::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cos_cubed-Debug-02bdca502c07114927d2.json",
+					"name" : "cos_cubed",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cos_density::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cos_density-Debug-0169706e76c2fe9fb4b5.json",
+					"name" : "cos_density",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "estimate_halfway::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-estimate_halfway-Debug-815c33a0e50761c19321.json",
+					"name" : "estimate_halfway",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "integrate_x_sq::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-integrate_x_sq-Debug-66084f6283e460ea29f5.json",
+					"name" : "integrate_x_sq",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-Debug-919aa4e1f5046000ab49.json",
+					"name" : "main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pi-Debug-5dec34142abddac70663.json",
+					"name" : "pi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sphere_importance::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sphere_importance-Debug-07c9ee5f78b0ec3e42d9.json",
+					"name" : "sphere_importance",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sphere_plot::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sphere_plot-Debug-8a56a7b6e594a821b957.json",
+					"name" : "sphere_plot",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/personal/raytracing_Cpp/build",
+		"source" : "E:/personal/raytracing_Cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

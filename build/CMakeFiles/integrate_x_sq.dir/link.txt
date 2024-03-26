@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\integrate_x_sq.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\integrate_x_sq.dir/objects.a @CMakeFiles\integrate_x_sq.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\integrate_x_sq.dir/objects.a -Wl,--no-whole-archive -o integrate_x_sq.exe -Wl,--out-implib,libintegrate_x_sq.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\integrate_x_sq.dir\linkLibs.rsp

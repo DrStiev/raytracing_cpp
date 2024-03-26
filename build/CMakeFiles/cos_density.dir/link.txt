@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cos_density.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\cos_density.dir/objects.a @CMakeFiles\cos_density.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\cos_density.dir/objects.a -Wl,--no-whole-archive -o cos_density.exe -Wl,--out-implib,libcos_density.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cos_density.dir\linkLibs.rsp

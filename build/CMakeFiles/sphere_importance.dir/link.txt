@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\sphere_importance.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\sphere_importance.dir/objects.a @CMakeFiles\sphere_importance.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\sphere_importance.dir/objects.a -Wl,--no-whole-archive -o sphere_importance.exe -Wl,--out-implib,libsphere_importance.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\sphere_importance.dir\linkLibs.rsp
