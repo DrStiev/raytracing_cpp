@@ -8,6 +8,8 @@
 #include "external/log.h"
 #include "external/params.h"
 
+// g++ main.cc -o main
+
 const char *filenames[10] = {
     "img/random_spheres.ppm", "img/two_spheres.ppm",        "img/earth.ppm",       "img/two_perlin_spheres.ppm",
     "img/quads.ppm",          "img/simple_lights.ppm",      "img/cornell_box.ppm", "img/cornell_smoke.ppm",
@@ -66,6 +68,7 @@ bool choice(int choice, RenderParameters params)
 
 bool saveImg(int i, RenderParameters params)
 {
+    std::cout << "WORKING ON: " << filenames[i - 1] << std::endl;
     std::ofstream file;
     file.open(filenames[i - 1], std::fstream::in | std::fstream::out | std::fstream::trunc);
     std::cout.rdbuf(file.rdbuf());
@@ -83,7 +86,8 @@ int main(int argc, char *argv[])
     LOG(INFO) << "START WORKING WITH RAYTRACING";
     // set parameters before run
     RenderParameters params;
-    params.setFromConfigFile("E:/personal/raytracing_Cpp/parameters.txt");
+    // TODO: use relative path not absolute
+    params.setFromConfigFile("..\\parameters.txt");
     if (argc < 2)
     {
         for (int i = 1; i <= 10; i++)

@@ -174,7 +174,7 @@ void earth(RenderParameters params)
     // World
     hittable_list world;
 
-    auto earth_texture = make_shared<image_texture>("img/earthmap.jpg");
+    auto earth_texture = make_shared<image_texture>(".\\img\\earthmap.jpg");
     auto earth_surface = make_shared<lambertian>(earth_texture);
     auto globe = make_shared<sphere>(point3(0, 0, 0), 2, earth_surface);
 
@@ -195,8 +195,8 @@ void two_perlin_spheres(RenderParameters params)
     world.add(make_shared<sphere>(point3(0, 2, 0), 2, make_shared<lambertian>(pertext)));
 
     camera cam = initialize_camera(params.lookfrom, params.lookat, params.vup, params.vfov, params.aspect_ratio,
-                                   params.image_width, params.samples_per_pixel, params.max_depth, 0,
-                                   params.focus_dist, params.c);
+                                   params.image_width, params.samples_per_pixel, params.max_depth, 0, params.focus_dist,
+                                   params.c);
     LOG(DEBUG) << "START RENDERING";
     cam.render(world, get_ligths());
     LOG(DEBUG) << "END RENDERING\n";
@@ -220,9 +220,9 @@ void quads(RenderParameters params)
     world.add(make_shared<quad>(point3(-2, 3, 1), vec3(4, 0, 0), vec3(0, 0, 4), upper_orange));
     world.add(make_shared<quad>(point3(-2, -3, 5), vec3(4, 0, 0), vec3(0, 0, -4), lower_teal));
 
-    camera cam = initialize_camera(point3(0, 0, 9), params.lookat, params.vup, 80, params.aspect_ratio,
-                                   params.image_width, params.samples_per_pixel, params.max_depth, 0,
-                                   params.focus_dist, params.c);
+    camera cam =
+        initialize_camera(point3(0, 0, 9), params.lookat, params.vup, 80, params.aspect_ratio, params.image_width,
+                          params.samples_per_pixel, params.max_depth, 0, params.focus_dist, params.c);
 
     LOG(DEBUG) << "START RENDERING";
     cam.render(world, get_ligths());
@@ -242,8 +242,8 @@ void simple_light(RenderParameters params)
     world.add(make_shared<quad>(point3(3, 1, -2), vec3(2, 0, 0), vec3(0, 2, 0), difflight));
 
     camera cam = initialize_camera(point3(26, 3, 6), point3(0, 2, 0), params.vup, params.vfov, params.aspect_ratio,
-                                   params.image_width, params.samples_per_pixel, params.max_depth, 0,
-                                   params.focus_dist, params.c);
+                                   params.image_width, params.samples_per_pixel, params.max_depth, 0, params.focus_dist,
+                                   params.c);
 
     LOG(DEBUG) << "START RENDERING";
     cam.render(world, get_ligths());
@@ -276,9 +276,9 @@ void cornell_box(RenderParameters params)
     box2 = make_shared<translate>(box2, vec3(130, 0, 65));
     world.add(box2);
 
-    camera cam = initialize_camera(point3(278, 278, -800), point3(278, 278, 0), params.vup, 40,
-                                   params.aspect_ratio, params.image_width, params.samples_per_pixel, params.max_depth,
-                                   0, params.focus_dist, color(0, 0, 0));
+    camera cam = initialize_camera(point3(278, 278, -800), point3(278, 278, 0), params.vup, 40, params.aspect_ratio,
+                                   params.image_width, params.samples_per_pixel, params.max_depth, 0, params.focus_dist,
+                                   color(0, 0, 0));
 
     LOG(DEBUG) << "START RENDERING";
     cam.render(world, get_ligths());
@@ -313,8 +313,7 @@ void cornell_smoke(RenderParameters params)
     world.add(make_shared<constant_medium>(box2, 0.01, color(1, 1, 1)));
 
     camera cam = initialize_camera(point3(278, 278, -800), point3(278, 278, 0), params.vup, 40, params.aspect_ratio,
-                                   params.image_width, 200, params.max_depth, 0, params.focus_dist,
-                                   color(0, 0, 0));
+                                   params.image_width, 200, params.max_depth, 0, params.focus_dist, color(0, 0, 0));
 
     LOG(DEBUG) << "START RENDERING";
     cam.render(world, get_ligths());
@@ -380,8 +379,8 @@ void final_scene(RenderParameters params)
     world.add(make_shared<translate>(make_shared<rotate_y>(make_shared<bvh_node>(boxes2), 15), vec3(-100, 270, 395)));
 
     camera cam = initialize_camera(point3(478, 278, -600), point3(278, 278, 0), params.vup, 40, params.aspect_ratio,
-                                   params.image_width, params.samples_per_pixel, params.max_depth, 0,
-                                   params.focus_dist, color(0, 0, 0));
+                                   params.image_width, params.samples_per_pixel, params.max_depth, 0, params.focus_dist,
+                                   color(0, 0, 0));
 
     LOG(DEBUG) << "START RENDERING";
     cam.render(world, get_ligths());
