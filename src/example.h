@@ -145,9 +145,9 @@ void random_spheres(RenderParameters params, int start = -11, int end = 11)
     camera cam = initialize_camera(params.lookfrom, params.lookat, params.vup, params.vfov, params.aspect_ratio,
                                    params.image_width, params.samples_per_pixel, params.max_depth, params.defocus_angle,
                                    params.focus_dist, params.c);
-    LOG(DEBUG) << "START RENDERING";
+    LOG(INFO) << "START RENDERING";
     cam.render(world, get_ligths());
-    LOG(DEBUG) << "END RENDERING\n";
+    LOG(INFO) << "END RENDERING\n";
 }
 
 void two_spheres(RenderParameters params)
@@ -163,9 +163,9 @@ void two_spheres(RenderParameters params)
     camera cam = initialize_camera(params.lookfrom, params.lookat, params.vup, params.vfov, params.aspect_ratio,
                                    params.image_width, params.samples_per_pixel, params.max_depth, params.defocus_angle,
                                    params.focus_dist, params.c);
-    LOG(DEBUG) << "START RENDERING";
+    LOG(INFO) << "START RENDERING";
     cam.render(world, get_ligths());
-    LOG(DEBUG) << "END RENDERING\n";
+    LOG(INFO) << "END RENDERING\n";
 }
 
 void earth(RenderParameters params)
@@ -181,9 +181,9 @@ void earth(RenderParameters params)
     camera cam = initialize_camera(point3(0, 0, 12), params.lookat, params.vup, params.vfov, params.aspect_ratio,
                                    params.image_width, params.samples_per_pixel, params.max_depth, params.defocus_angle,
                                    params.focus_dist, params.c);
-    LOG(DEBUG) << "START RENDERING";
+    LOG(INFO) << "START RENDERING";
     cam.render(world, get_ligths());
-    LOG(DEBUG) << "END RENDERING\n";
+    LOG(INFO) << "END RENDERING\n";
 }
 
 void two_perlin_spheres(RenderParameters params)
@@ -197,9 +197,9 @@ void two_perlin_spheres(RenderParameters params)
     camera cam = initialize_camera(params.lookfrom, params.lookat, params.vup, params.vfov, params.aspect_ratio,
                                    params.image_width, params.samples_per_pixel, params.max_depth, 0, params.focus_dist,
                                    params.c);
-    LOG(DEBUG) << "START RENDERING";
+    LOG(INFO) << "START RENDERING";
     cam.render(world, get_ligths());
-    LOG(DEBUG) << "END RENDERING\n";
+    LOG(INFO) << "END RENDERING\n";
 }
 
 void quads(RenderParameters params)
@@ -224,9 +224,9 @@ void quads(RenderParameters params)
         initialize_camera(point3(0, 0, 9), params.lookat, params.vup, 80, params.aspect_ratio, params.image_width,
                           params.samples_per_pixel, params.max_depth, 0, params.focus_dist, params.c);
 
-    LOG(DEBUG) << "START RENDERING";
+    LOG(INFO) << "START RENDERING";
     cam.render(world, get_ligths());
-    LOG(DEBUG) << "END RENDERING\n";
+    LOG(INFO) << "END RENDERING\n";
 }
 
 void simple_light(RenderParameters params)
@@ -245,9 +245,9 @@ void simple_light(RenderParameters params)
                                    params.image_width, params.samples_per_pixel, params.max_depth, 0, params.focus_dist,
                                    params.c);
 
-    LOG(DEBUG) << "START RENDERING";
+    LOG(INFO) << "START RENDERING";
     cam.render(world, get_ligths());
-    LOG(DEBUG) << "END RENDERING\n";
+    LOG(INFO) << "END RENDERING\n";
 }
 
 void cornell_box(RenderParameters params)
@@ -280,9 +280,9 @@ void cornell_box(RenderParameters params)
                                    params.image_width, params.samples_per_pixel, params.max_depth, 0, params.focus_dist,
                                    color(0, 0, 0));
 
-    LOG(DEBUG) << "START RENDERING";
+    LOG(INFO) << "START RENDERING";
     cam.render(world, get_ligths());
-    LOG(DEBUG) << "END RENDERING\n";
+    LOG(INFO) << "END RENDERING\n";
 }
 
 void cornell_smoke(RenderParameters params)
@@ -315,9 +315,9 @@ void cornell_smoke(RenderParameters params)
     camera cam = initialize_camera(point3(278, 278, -800), point3(278, 278, 0), params.vup, 40, params.aspect_ratio,
                                    params.image_width, 200, params.max_depth, 0, params.focus_dist, color(0, 0, 0));
 
-    LOG(DEBUG) << "START RENDERING";
+    LOG(INFO) << "START RENDERING";
     cam.render(world, get_ligths());
-    LOG(DEBUG) << "END RENDERING\n";
+    LOG(INFO) << "END RENDERING\n";
 }
 
 void final_scene(RenderParameters params)
@@ -382,9 +382,9 @@ void final_scene(RenderParameters params)
                                    params.image_width, params.samples_per_pixel, params.max_depth, 0, params.focus_dist,
                                    color(0, 0, 0));
 
-    LOG(DEBUG) << "START RENDERING";
+    LOG(INFO) << "START RENDERING";
     cam.render(world, get_ligths());
-    LOG(DEBUG) << "END RENDERING\n";
+    LOG(INFO) << "END RENDERING\n";
 }
 
 void another_last_scene(RenderParameters params)
@@ -426,7 +426,7 @@ void another_last_scene(RenderParameters params)
                                    params.image_width, params.samples_per_pixel, params.max_depth, params.defocus_angle,
                                    params.focus_dist, color(0, 0, 0));
 
-    LOG(DEBUG) << "START RENDERING";
+    LOG(INFO) << "START RENDERING";
     cam.render(world, get_ligths());
-    LOG(DEBUG) << "END RENDERING\n";
+    LOG(INFO) << "END RENDERING\n";
 }
