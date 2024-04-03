@@ -35,6 +35,7 @@ class camera
         std::cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
 
         progressbar pb(image_height);
+        pb.set_done_char("█");
         for (int j = 0; j < image_height; ++j)
         {
             pb.update();

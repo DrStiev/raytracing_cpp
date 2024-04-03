@@ -76,7 +76,6 @@ camera initialize_camera(const point3 &lookfrom, const point3 &lookat, const vec
     return cam;
 }
 
-// TODO: WONKY BEHAVIOUR
 void random_spheres(RenderParameters params, int start = -11, int end = 11)
 {
     // World
