@@ -1,4 +1,3 @@
-// https://github.com/fralken/ray-tracing-in-one-weekend
 #include <fstream>
 #include <iostream>
 #include <string>
